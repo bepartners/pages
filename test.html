@@ -14,7 +14,7 @@
   <body>
     <script>
       function resize(iframe) {
-        iframe.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
       }
     </script>
     <iframe id="main" width="100%" onload="resize(this);" frameborder="0" scrolling="no"></iframe>
