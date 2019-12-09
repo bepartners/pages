@@ -15,7 +15,9 @@
     <iframe id="main" width="100%" height="4000"></iframe>
     <script>
       var base = "https://script.google.com/a/bepartners-re.com/macros/s/AKfycbxiqchhmoc3SwI8kcTMkR4mlg6J307nL2ND13B2xCew-4_w51c/exec";
-      document.getElementById("main").src = base;
+      var url = base + window.location.search;
+      document.getElementById("main").src = url;
+      
     </script>
   </body>
 </html>
