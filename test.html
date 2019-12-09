@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <style>
-      iframe {
-        border-width: 0px;
-      }
       body {
         margin: 0px;
       }
     </style>
   </head>
   <body>
-    <iframe id="main" width="100%" height="4000"></iframe>
+    <script>
+      function resize(iframe) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
+    <iframe id="main" width="100%" height="4000" onload="resize(this);" frameborder="0" scrolling="no"></iframe>
     <script>
       var base = "https://script.google.com/a/bepartners-re.com/macros/s/AKfycbxiqchhmoc3SwI8kcTMkR4mlg6J307nL2ND13B2xCew-4_w51c/exec";
       var url = base + window.location.search;
